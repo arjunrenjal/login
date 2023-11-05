@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   {{> header   }}
+  <body>
+   
+ {{> navbar   }}
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-3 mb-3">{{ title }}</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tr>
+                <th>WELCOME</th>
+                <th></th>
+              </tr>
+              {{#each users}}
+              <tr>
+                <td>{{ NAME }}</td>
+                <td>{{ EMAIL }}</td>
+              </tr>
+              {{/each}}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
